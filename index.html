@@ -9,7 +9,7 @@
 </head>
 <body class="container">
     <h1 id="title">Survery Form</h1>
-    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam veniam alias est nam nihil ipsa mollitia sapiente consectetur maiores placeat, recusandae illo facilis praesentium voluptatum ea corporis quidem quis?</p>  
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam veniam alias est nam nihil ipsa mollitia sapiente consectetur maiores placeat, recusandae illo facilis       </p>	
 	<form id="survey-form">
         <label for="name" id="name-label"  >Name</label>
 		<input type="text" id="name" name="name" placeholder="Username" class="form-control mb-2">
@@ -21,6 +21,20 @@
             <option value="1">male</option>
             <option value="1">female</option>
         </select>
+	<div class="col">
+	<label for="english">English</label>
+	<input type="radio" id="english"name="language" value="English">
+	 <label for="others">Others</label>
+	<input type="radio" name="language" id="others" value="Others">
+	</div>
+	<div class="col">
+	 <label for="utc5">US</label>
+	<input type="checkbox" id="timezone1"  name="timezone" value="UTC-5">
+	 <label for="utc1">Asia</label>
+	<input type="checkbox" id="timezone2" name="timezone"  value="UTC+1">
+	</div>
+	<textarea class="form-control"></textarea>
+	<input type="submit" id="submit" class="btn btn-primary" class="form-control"> 
 	</form>
 </body>
 </html>
